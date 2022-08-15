@@ -13,9 +13,7 @@ export default function Sidebar() {
         <p className="word">Security</p>
         <p className="word">Cryptograpy</p>
       </div>
-      <div className="key side">
         <img src={key} alt="key icon" className="key-icon" />
-      </div>
     </div>
   );
 }
