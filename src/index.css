@@ -134,7 +134,7 @@ h1 {
 
 .password p {
   background: none;
-  margin-left: 13px;
+  margin-left: 40px;
   font-weight: 400;
   font-size: 17px;
   line-height: 19px;
@@ -149,6 +149,7 @@ h1 {
   height: 50px;
   align-self: center;
   justify-self: flex-end;
+  cursor: pointer;
 }
 
 .generate-btn {
@@ -304,4 +305,13 @@ article {
   /* Color 2 / 75% */
 
   color: rgba(250, 250, 250, 0.75);
+}
+
+button {
+  cursor: pointer;
+}
+
+#copy {
+  background: none;
+  border: none;
 }

@@ -2,8 +2,31 @@ import React from "react";
 import bigImage from "../assets/Big-Image.png";
 import emoji from "../assets/Emoji.png";
 import tick from "../assets/Right.png";
+import characters from "./characters.js"
 
 export default function Main() {
+
+
+  let passwordOne = "",
+    passwordTwo = "";
+  
+  function generatePassword() {
+    
+    for (let i = 1; i <= 8; i++) {
+      let randomIndex = Math.floor(Math.random() * characters.length);
+      passwordOne += characters[randomIndex];
+    }
+    for (let i = 1; i <= 8; i++) {
+      let randomIndex = Math.floor(Math.random() * characters.length);
+      passwordTwo += characters[randomIndex];
+    }
+
+  }
+  generatePassword()
+  
+  document.getElementById("")
+
+
   return (
     <div className="main">
       {/* left side of the div */}
@@ -16,17 +39,28 @@ export default function Main() {
           {/* outputs */}
           <div className="outputs">
             <div className="password" id="password-1">
-              <p>12$treet8</p>
-              <img src={tick} alt="tick" className="tick" />
+              <p id="pass1">{passwordOne}</p>
+              <button id="copy">
+                <img src={tick} alt="tick" className="tick" />
+              </button>
             </div>
             <div className="password" id="password-2">
-              <p>12$treet8</p>
-              <img src={tick} alt="tick" className="tick" />
+              <p id="pass2">{passwordTwo}</p>
+              <button id="copy">
+                <img src={tick} alt="tick" className="tick" />
+              </button>
             </div>
           </div>
 
           {/* generate button */}
-          <button className="generate-btn">Generate New</button>
+
+
+          <button className="generate-btn" id="generate">
+            Generate New
+          </button>
+
+          {/* button ends */}
+
         </div>
         {/* end of block 1 div */}
 
