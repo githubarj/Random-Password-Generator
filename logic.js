@@ -97,7 +97,7 @@ let passwordTwo = document.getElementById("password-2");
 
 function readLength() {
   const length = document.querySelector("input").value;
-  return length
+  return length;
 }
 
 function generatePassword() {
@@ -113,7 +113,7 @@ function generatePassword() {
   }
 }
 
-function copy1 (){
+function copy1() {
   let copyText = document.getElementById("password-1");
   navigator.clipboard.writeText(copyText.textContent);
 
@@ -125,4 +125,3 @@ function copy2() {
 
   alert("Password has been copied");
 }
-
